@@ -14,7 +14,7 @@ export default function Home(): JSX.Element {
 		<div class='px-4 py-8 mx-auto'>
 			<div class='max-w-screen-md mx-auto flex flex-col items-center justify-center'>
 				<img class='my-6' src={asset('/assets/svg/check.svg')} alt={`${env['APP_NAME'] as string} logo`} />
-				<h1 class='text-4xl font-bold'>{env['APP_NAME'] as string} &copy; {new Date().getFullYear()} Non-Violable Liberty Layers</h1>
+				<h1 class='text-4xl font-bold'>{env['APP_NAME'] as string} &copy; {new Date().getFullYear()} Rivane Rasetiansyah</h1>
 				<p class='my-4'>
 					Try updating this message in the
 					<code class='mx-2 bg-gray'>./src/routes/(views)/index.tsx</code> file, and refresh.

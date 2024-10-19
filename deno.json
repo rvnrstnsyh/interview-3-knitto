@@ -1,17 +1,17 @@
 {
 	"lock": false,
 	"nodeModulesDir": "none",
-	"deploy": { "project": "RE(Fresh)", "exclude": ["**/node_modules"], "include": [], "entrypoint": "src\\main.ts" },
+	"deploy": { "project": "knitto-interview", "exclude": ["**/node_modules"], "include": [], "entrypoint": "src\\main.ts" },
 	"tasks": {
 		"check": "deno fmt --check && deno lint && deno check **/*.ts && deno check **/*.tsx",
 		"cli": "echo \"import '\\$fresh/src/dev/cli.ts'\" | deno run --unstable -A -",
 		"manifest": "deno task cli manifest $(pwd)",
 		"dev": "deno run -A --unstable-kv --watch=src/static/,src/routes/ src/dev.ts",
 		"build": "deno run -A --unstable-kv src/dev.ts build",
-		"docker:build": "docker build -t RE(Fresh) .",
-		"deploy": "deno run -A --unstable-kv src/dev.ts build && deployctl deploy --prod --project=RE(Fresh)",
+		"docker:build": "docker build -t knitto-interview .",
+		"deploy": "deno run -A --unstable-kv src/dev.ts build && deployctl deploy --prod --project=knitto-interview",
 		"preview": "deno run -A --unstable-kv src/main.ts",
-		"live": "pm2 start ecosystem.config.sh --name RE(Fresh) --instances 1",
+		"live": "pm2 start ecosystem.config.sh --name knitto-interview --instances 1",
 		"update": "deno run -A -r https://fresh.deno.dev/update ."
 	},
 	"compilerOptions": { "types": ["./definition.d.ts"], "jsx": "react-jsx", "jsxImportSource": "preact" },

@@ -5,7 +5,7 @@ export const sql: Client = await new Client().connect({
 	port: 3306,
 	username: 'root',
 	password: '',
-	db: 'nvll',
+	db: 'knitto',
 	poolSize: 0, // connection limit is 3.
 	timeout: 1000 * 30, // set timeout to 30 seconds
 })
