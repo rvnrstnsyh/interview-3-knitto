@@ -16,6 +16,7 @@ import * as $authentication_modal from './islands/authentication-modal.tsx'
 import * as $google_oauth_button from './islands/google-oauth-button.tsx'
 import * as $login_form from './islands/login-form.tsx'
 import * as $logout_button from './islands/logout-button.tsx'
+import * as $oauth_context from './islands/oauth-context.tsx'
 import * as $register_form from './islands/register-form.tsx'
 import type { Manifest } from '$fresh/server.ts'
 
@@ -37,6 +38,7 @@ const manifest = {
 		'./islands/google-oauth-button.tsx': $google_oauth_button,
 		'./islands/login-form.tsx': $login_form,
 		'./islands/logout-button.tsx': $logout_button,
+		'./islands/oauth-context.tsx': $oauth_context,
 		'./islands/register-form.tsx': $register_form,
 	},
 	baseUrl: import.meta.url,

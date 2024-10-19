@@ -51,23 +51,23 @@ export function sentinel(pathname: string, headers: Headers, remoteIp: string, m
 	// Clear-Site-Data (use with caution, as it clears all site data).
 	// headers.set('Clear-Site-Data', '"cache", "cookies", "storage"' as const)
 	// Content Security Policy (strict).
-	headers.set(
-		'Content-Security-Policy',
-		[
-			"default-src 'self'",
-			"script-src 'self' 'unsafe-inline' 'unsafe-eval' https:",
-			"script-src-attr 'none'",
-			'upgrade-insecure-requests',
-			"base-uri 'self'",
-			"form-action 'self'",
-			"connect-src 'self' https:",
-			"img-src 'self' https: data:",
-			"style-src 'self' 'unsafe-inline' https:",
-			"font-src 'self' https: data:",
-			"frame-ancestors 'self'",
-			"object-src 'none'",
-		].join('; ') + ';' as string,
-	)
+	// headers.set(
+	// 	'Content-Security-Policy',
+	// 	[
+	// 		"default-src 'self'",
+	// 		"script-src 'self' 'unsafe-inline' 'unsafe-eval' https:",
+	// 		"script-src-attr 'none'",
+	// 		'upgrade-insecure-requests',
+	// 		"base-uri 'self'",
+	// 		"form-action 'self'",
+	// 		"connect-src 'self' https:",
+	// 		"img-src 'self' https: data:",
+	// 		"style-src 'self' 'unsafe-inline' https:",
+	// 		"font-src 'self' https: data:",
+	// 		"frame-ancestors 'self'",
+	// 		"object-src 'none'",
+	// 	].join('; ') + ';' as string,
+	// )
 	// Cross-Origin Embedder Policy.
 	headers.set('Cross-Origin-Embedder-Policy', 'require-corp' as const)
 	// Cross-Origin Opener Policy.
