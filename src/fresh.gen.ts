@@ -3,28 +3,40 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $_views_layout from './routes/(views)/_layout.tsx'
+import * as $_views_dashboard_middleware from './routes/(views)/dashboard/_middleware.ts'
+import * as $_views_dashboard_index from './routes/(views)/dashboard/index.tsx'
 import * as $_views_index from './routes/(views)/index.tsx'
 import * as $_app from './routes/_app.tsx'
 import * as $_middleware from './routes/_middleware.ts'
+import * as $api_v0_auth_middleware from './routes/api/v0/auth/_middleware.ts'
+import * as $api_v0_auth_login from './routes/api/v0/auth/login.ts'
+import * as $api_v0_auth_register from './routes/api/v0/auth/register.ts'
 import * as $api_v0_traffic_jam_index from './routes/api/v0/traffic-jam/index.ts'
 import * as $authentication_modal from './islands/authentication-modal.tsx'
 import * as $google_oauth_button from './islands/google-oauth-button.tsx'
 import * as $login_form from './islands/login-form.tsx'
+import * as $logout_button from './islands/logout-button.tsx'
 import * as $register_form from './islands/register-form.tsx'
 import type { Manifest } from '$fresh/server.ts'
 
 const manifest = {
 	routes: {
 		'./routes/(views)/_layout.tsx': $_views_layout,
+		'./routes/(views)/dashboard/_middleware.ts': $_views_dashboard_middleware,
+		'./routes/(views)/dashboard/index.tsx': $_views_dashboard_index,
 		'./routes/(views)/index.tsx': $_views_index,
 		'./routes/_app.tsx': $_app,
 		'./routes/_middleware.ts': $_middleware,
+		'./routes/api/v0/auth/_middleware.ts': $api_v0_auth_middleware,
+		'./routes/api/v0/auth/login.ts': $api_v0_auth_login,
+		'./routes/api/v0/auth/register.ts': $api_v0_auth_register,
 		'./routes/api/v0/traffic-jam/index.ts': $api_v0_traffic_jam_index,
 	},
 	islands: {
 		'./islands/authentication-modal.tsx': $authentication_modal,
 		'./islands/google-oauth-button.tsx': $google_oauth_button,
 		'./islands/login-form.tsx': $login_form,
+		'./islands/logout-button.tsx': $logout_button,
 		'./islands/register-form.tsx': $register_form,
 	},
 	baseUrl: import.meta.url,

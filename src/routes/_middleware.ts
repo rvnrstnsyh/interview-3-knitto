@@ -58,7 +58,6 @@ export class AppContext {
 		console.log(`System ${env['APP_NAME'] as string} initialization...`)
 		try {
 			await sql.query('SELECT 100 + 100 AS OK')
-			await sql.close()
 			console.log('+OK key and value established')
 			await new Promise((resolve) => setTimeout(resolve, 2000))
 			console.clear()
