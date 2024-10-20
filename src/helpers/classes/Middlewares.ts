@@ -102,7 +102,7 @@ export default class Middlewares {
 						data: { histories: trafficHistories },
 					}
 
-					await Kv.set(trafficKey, updatedTrafficValue, 60 * 60 * 1000 * 24) // expire in 24 hours
+					await Kv.set(trafficKey, updatedTrafficValue, 60 * 60 * 1000 * 1) // expire in 1 hours
 				}
 			}
 		}
