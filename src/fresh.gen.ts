@@ -15,6 +15,8 @@ import * as $api_v0_auth_register from './routes/api/v0/auth/register.ts'
 import * as $api_v0_traffic_jam_index from './routes/api/v0/traffic-jam/index.ts'
 import * as $api_v0_unique_item_middleware from './routes/api/v0/unique-item/_middleware.ts'
 import * as $api_v0_unique_item_index from './routes/api/v0/unique-item/index.ts'
+import * as $api_v0_user_external_middleware from './routes/api/v0/user-external/_middleware.ts'
+import * as $api_v0_user_external_index from './routes/api/v0/user-external/index.ts'
 import * as $authentication_modal from './islands/authentication-modal.tsx'
 import * as $google_oauth_button from './islands/google-oauth-button.tsx'
 import * as $login_form from './islands/login-form.tsx'
@@ -38,6 +40,8 @@ const manifest = {
 		'./routes/api/v0/traffic-jam/index.ts': $api_v0_traffic_jam_index,
 		'./routes/api/v0/unique-item/_middleware.ts': $api_v0_unique_item_middleware,
 		'./routes/api/v0/unique-item/index.ts': $api_v0_unique_item_index,
+		'./routes/api/v0/user-external/_middleware.ts': $api_v0_user_external_middleware,
+		'./routes/api/v0/user-external/index.ts': $api_v0_user_external_index,
 	},
 	islands: {
 		'./islands/authentication-modal.tsx': $authentication_modal,
