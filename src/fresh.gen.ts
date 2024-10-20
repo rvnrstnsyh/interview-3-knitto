@@ -12,6 +12,8 @@ import * as $api_v0_auth_middleware from './routes/api/v0/auth/_middleware.ts'
 import * as $api_v0_auth_login from './routes/api/v0/auth/login.ts'
 import * as $api_v0_auth_logout from './routes/api/v0/auth/logout.ts'
 import * as $api_v0_auth_register from './routes/api/v0/auth/register.ts'
+import * as $api_v0_task_scheduler_middleware from './routes/api/v0/task-scheduler/_middleware.ts'
+import * as $api_v0_task_scheduler_index from './routes/api/v0/task-scheduler/index.ts'
 import * as $api_v0_traffic_jam_index from './routes/api/v0/traffic-jam/index.ts'
 import * as $api_v0_unique_item_middleware from './routes/api/v0/unique-item/_middleware.ts'
 import * as $api_v0_unique_item_index from './routes/api/v0/unique-item/index.ts'
@@ -37,6 +39,8 @@ const manifest = {
 		'./routes/api/v0/auth/login.ts': $api_v0_auth_login,
 		'./routes/api/v0/auth/logout.ts': $api_v0_auth_logout,
 		'./routes/api/v0/auth/register.ts': $api_v0_auth_register,
+		'./routes/api/v0/task-scheduler/_middleware.ts': $api_v0_task_scheduler_middleware,
+		'./routes/api/v0/task-scheduler/index.ts': $api_v0_task_scheduler_index,
 		'./routes/api/v0/traffic-jam/index.ts': $api_v0_traffic_jam_index,
 		'./routes/api/v0/unique-item/_middleware.ts': $api_v0_unique_item_middleware,
 		'./routes/api/v0/unique-item/index.ts': $api_v0_unique_item_index,
