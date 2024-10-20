@@ -10,7 +10,6 @@ import * as $_app from './routes/_app.tsx'
 import * as $_middleware from './routes/_middleware.ts'
 import * as $api_v0_auth_middleware from './routes/api/v0/auth/_middleware.ts'
 import * as $api_v0_auth_login from './routes/api/v0/auth/login.ts'
-import * as $api_v0_auth_logout from './routes/api/v0/auth/logout.ts'
 import * as $api_v0_auth_register from './routes/api/v0/auth/register.ts'
 import * as $api_v0_task_scheduler_middleware from './routes/api/v0/task-scheduler/_middleware.ts'
 import * as $api_v0_task_scheduler_index from './routes/api/v0/task-scheduler/index.ts'
@@ -39,7 +38,6 @@ const manifest = {
 		'./routes/_middleware.ts': $_middleware,
 		'./routes/api/v0/auth/_middleware.ts': $api_v0_auth_middleware,
 		'./routes/api/v0/auth/login.ts': $api_v0_auth_login,
-		'./routes/api/v0/auth/logout.ts': $api_v0_auth_logout,
 		'./routes/api/v0/auth/register.ts': $api_v0_auth_register,
 		'./routes/api/v0/task-scheduler/_middleware.ts': $api_v0_task_scheduler_middleware,
 		'./routes/api/v0/task-scheduler/index.ts': $api_v0_task_scheduler_index,

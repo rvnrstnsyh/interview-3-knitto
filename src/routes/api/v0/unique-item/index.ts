@@ -11,6 +11,7 @@ export const handler: Handlers = {
 			return Http.json(Http.data({
 				success: false,
 				code: 400,
+				type: 'unique-item',
 				message: '-ERR unique code is required',
 			}))
 		}
@@ -38,6 +39,7 @@ export const handler: Handlers = {
 					return Http.json(Http.data({
 						success: true,
 						code: 201,
+						type: 'unique-item',
 						message: '+OK data saved successfully.',
 						data: {
 							unique_code,
@@ -54,6 +56,7 @@ export const handler: Handlers = {
 					return Http.json(Http.data({
 						success: false,
 						code: 500,
+						type: 'unique-item',
 						message: `-ERR ${error instanceof Error ? error.message : 'unknown error'}`,
 					}))
 				}
@@ -63,6 +66,7 @@ export const handler: Handlers = {
 		return Http.json(Http.data({
 			success: false,
 			code: 500,
+			type: 'unique-item',
 			message: '-ERR Failed to save data after multiple attempts',
 		}))
 	},
