@@ -10,8 +10,11 @@ import * as $_app from './routes/_app.tsx'
 import * as $_middleware from './routes/_middleware.ts'
 import * as $api_v0_auth_middleware from './routes/api/v0/auth/_middleware.ts'
 import * as $api_v0_auth_login from './routes/api/v0/auth/login.ts'
+import * as $api_v0_auth_logout from './routes/api/v0/auth/logout.ts'
 import * as $api_v0_auth_register from './routes/api/v0/auth/register.ts'
 import * as $api_v0_traffic_jam_index from './routes/api/v0/traffic-jam/index.ts'
+import * as $api_v0_unique_item_middleware from './routes/api/v0/unique-item/_middleware.ts'
+import * as $api_v0_unique_item_index from './routes/api/v0/unique-item/index.ts'
 import * as $authentication_modal from './islands/authentication-modal.tsx'
 import * as $google_oauth_button from './islands/google-oauth-button.tsx'
 import * as $login_form from './islands/login-form.tsx'
@@ -30,8 +33,11 @@ const manifest = {
 		'./routes/_middleware.ts': $_middleware,
 		'./routes/api/v0/auth/_middleware.ts': $api_v0_auth_middleware,
 		'./routes/api/v0/auth/login.ts': $api_v0_auth_login,
+		'./routes/api/v0/auth/logout.ts': $api_v0_auth_logout,
 		'./routes/api/v0/auth/register.ts': $api_v0_auth_register,
 		'./routes/api/v0/traffic-jam/index.ts': $api_v0_traffic_jam_index,
+		'./routes/api/v0/unique-item/_middleware.ts': $api_v0_unique_item_middleware,
+		'./routes/api/v0/unique-item/index.ts': $api_v0_unique_item_index,
 	},
 	islands: {
 		'./islands/authentication-modal.tsx': $authentication_modal,
